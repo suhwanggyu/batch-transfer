@@ -1,7 +1,7 @@
 # Batch transfer of erc20, ethereum
 
 
-For reduce fee, batch processing for transfer is needed.
+For reducing fee, batch processing for transfer is needed.
 
 
 | Name | Detail | Interface |
