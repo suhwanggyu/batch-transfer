@@ -1,0 +1,116 @@
+{
+  "contractName": "IBatch",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/tjdhk/Desktop/atomic/contracts/batch/IBatch.sol\":\"IBatch\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tjdhk/Desktop/atomic/contracts/batch/IBatch.sol\":{\"keccak256\":\"0xba819da5b0a350d2493bce526fddb41b63bc25a70351a96459c5846d78f5746f\",\"urls\":[\"bzz-raw://a4208c285ed5a42a186acfabab91689c23ab60c96325f66e650e7d818832bc7a\",\"dweb:/ipfs/QmYT5tco7dB6EFf3b4NeAbL8qbPLWQ5yNxV5zzZGU8toGN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\r\n\r\ninterface IBatch {\r\n\r\n}",
+  "sourcePath": "C:\\Users\\tjdhk\\Desktop\\atomic\\contracts\\batch\\IBatch.sol",
+  "ast": {
+    "absolutePath": "/C/Users/tjdhk/Desktop/atomic/contracts/batch/IBatch.sol",
+    "exportedSymbols": {
+      "IBatch": [
+        324
+      ]
+    },
+    "id": 325,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 323,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "id": 324,
+        "linearizedBaseContracts": [
+          324
+        ],
+        "name": "IBatch",
+        "nameLocation": "37:6:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 325,
+        "src": "27:23:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:50:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/tjdhk/Desktop/atomic/contracts/batch/IBatch.sol",
+    "exportedSymbols": {
+      "IBatch": [
+        324
+      ]
+    },
+    "id": 325,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 323,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "id": 324,
+        "linearizedBaseContracts": [
+          324
+        ],
+        "name": "IBatch",
+        "nameLocation": "37:6:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 325,
+        "src": "27:23:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:50:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-05-11T04:29:37.645Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
