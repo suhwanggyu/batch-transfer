@@ -1,7 +1,9 @@
-const Batch = artifacts.require("batch/Batch");
+const IBatch = artifacts.require("batch/IBatch");
+const IDefaultBatch = artifacts.require("batch/IDefaultBatch");
 const ATK = artifacts.require("testtoken/ATK");
 const BTK = artifacts.require("testtoken/BTK");
 const CTK = artifacts.require("testtoken/CTK");
+const Factory = artifacts.require("Factory");
 
 const gasCalculator = 0.00077;
 
@@ -10,7 +12,8 @@ contract('Batch', async function(accounts) {
         Test for Ethereum batch transfer with same amount
     */
     it("Batch ethereum transfer", async() => {
-        const batch = await Batch.deployed();
+        const factory = await Factory.deployed();
+        const batch = await IDefaultBatch.at(await factory.getDefault());
         let amount = 10**17;
         let targetAddress = accounts.slice(2, 10);
         let owner = accounts[1];
@@ -51,7 +54,8 @@ contract('Batch', async function(accounts) {
     });
     
     it("Batch ethereum transfer with different value", async() => {
-        const batch = await Batch.deployed();
+        const factory = await Factory.deployed();
+        const batch = await IDefaultBatch.at(await factory.getDefault());
         let amount = [];
         let targetAddress = accounts.slice(2, 10);
         let owner = accounts[0];
@@ -97,7 +101,9 @@ contract('Batch', async function(accounts) {
         Test for erc20 batch transfer with different amount
     */
     it("Batch erc20", async() => {
-        let batch = await Batch.deployed();
+        const factory = await Factory.deployed();
+        await factory.generateBatch(accounts[0]);
+        const batch = await IBatch.at((await factory.getBatches(accounts[0]))[0]);
         let atk = await ATK.deployed();
         let btk = await BTK.deployed();
         let ctk = await CTK.deployed();

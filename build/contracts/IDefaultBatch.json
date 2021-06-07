@@ -1,0 +1,556 @@
+{
+  "contractName": "IDefaultBatch",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "recipient",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "recipient",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amount",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "transferEthWithDifferentValue",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"recipient\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"recipient\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amount\",\"type\":\"uint256[]\"}],\"name\":\"transferEthWithDifferentValue\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Wanggyu, Suh\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IDefaultBatch \",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/tjdhk/Desktop/atomic/contracts/batch/IDefaultBatch.sol\":\"IDefaultBatch\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/tjdhk/Desktop/atomic/contracts/batch/IDefaultBatch.sol\":{\"keccak256\":\"0x48d02656e39a0622ca5f64493cae7960607ad366bac3371067e320a4304a28a3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://572507e47bc48da69ffd782ebb02838eed46993bac8c11325f5b27e07e436df9\",\"dweb:/ipfs/QmWhzmssCRsyGZeFi7Vsh8EQ1aAmMXPWiv6x3H9yZdg8Hw\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n/** \r\n  *@title IDefaultBatch \r\n  *@author Wanggyu, Suh\r\n*/\r\ninterface IDefaultBatch {\r\n    function transfer(address[] memory recipient, uint256 amount) external payable;\r\n    function transferEthWithDifferentValue(address[] memory recipient, uint256[] memory amount) external payable;\r\n}",
+  "sourcePath": "C:\\Users\\tjdhk\\Desktop\\atomic\\contracts\\batch\\IDefaultBatch.sol",
+  "ast": {
+    "absolutePath": "/C/Users/tjdhk/Desktop/atomic/contracts/batch/IDefaultBatch.sol",
+    "exportedSymbols": {
+      "IDefaultBatch": [
+        447
+      ]
+    },
+    "id": 448,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 428,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:5"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 429,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:59:5",
+          "text": "@title IDefaultBatch \n@author Wanggyu, Suh"
+        },
+        "fullyImplemented": false,
+        "id": 447,
+        "linearizedBaseContracts": [
+          447
+        ],
+        "name": "IDefaultBatch",
+        "nameLocation": "129:13:5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "1939c1ff",
+            "id": 437,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transfer",
+            "nameLocation": "159:8:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 432,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "185:9:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 437,
+                  "src": "168:26:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 430,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "168:7:5",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 431,
+                    "nodeType": "ArrayTypeName",
+                    "src": "168:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 434,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "204:6:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 437,
+                  "src": "196:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 433,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "196:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:44:5"
+            },
+            "returnParameters": {
+              "id": 436,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "228:0:5"
+            },
+            "scope": 447,
+            "src": "150:79:5",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "31481a9d",
+            "id": 446,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferEthWithDifferentValue",
+            "nameLocation": "244:29:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 444,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 440,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "291:9:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 446,
+                  "src": "274:26:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 438,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "274:7:5",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 439,
+                    "nodeType": "ArrayTypeName",
+                    "src": "274:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 443,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "319:6:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 446,
+                  "src": "302:23:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 441,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "302:7:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 442,
+                    "nodeType": "ArrayTypeName",
+                    "src": "302:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "273:53:5"
+            },
+            "returnParameters": {
+              "id": 445,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "343:0:5"
+            },
+            "scope": 447,
+            "src": "235:109:5",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 448,
+        "src": "119:228:5",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:314:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/tjdhk/Desktop/atomic/contracts/batch/IDefaultBatch.sol",
+    "exportedSymbols": {
+      "IDefaultBatch": [
+        447
+      ]
+    },
+    "id": 448,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 428,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:5"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 429,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:59:5",
+          "text": "@title IDefaultBatch \n@author Wanggyu, Suh"
+        },
+        "fullyImplemented": false,
+        "id": 447,
+        "linearizedBaseContracts": [
+          447
+        ],
+        "name": "IDefaultBatch",
+        "nameLocation": "129:13:5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "1939c1ff",
+            "id": 437,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transfer",
+            "nameLocation": "159:8:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 432,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "185:9:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 437,
+                  "src": "168:26:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 430,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "168:7:5",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 431,
+                    "nodeType": "ArrayTypeName",
+                    "src": "168:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 434,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "204:6:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 437,
+                  "src": "196:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 433,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "196:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:44:5"
+            },
+            "returnParameters": {
+              "id": 436,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "228:0:5"
+            },
+            "scope": 447,
+            "src": "150:79:5",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "31481a9d",
+            "id": 446,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferEthWithDifferentValue",
+            "nameLocation": "244:29:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 444,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 440,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "291:9:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 446,
+                  "src": "274:26:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 438,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "274:7:5",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 439,
+                    "nodeType": "ArrayTypeName",
+                    "src": "274:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 443,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "319:6:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 446,
+                  "src": "302:23:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 441,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "302:7:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 442,
+                    "nodeType": "ArrayTypeName",
+                    "src": "302:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "273:53:5"
+            },
+            "returnParameters": {
+              "id": 445,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "343:0:5"
+            },
+            "scope": 447,
+            "src": "235:109:5",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 448,
+        "src": "119:228:5",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:314:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-07T07:03:06.274Z",
+  "devdoc": {
+    "author": "Wanggyu, Suh",
+    "kind": "dev",
+    "methods": {},
+    "title": "IDefaultBatch ",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

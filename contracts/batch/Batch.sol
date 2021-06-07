@@ -28,27 +28,9 @@ contract Batch is IBatch {
         _;
     }
     
-    constructor() {
-        administrators[msg.sender] = true;
+    constructor(address admin) {
+        administrators[admin] = true;
         addable = true;
-    }
-    
-    function transfer(address[] memory recipient, uint256 amount) external override payable {
-        require(amount * recipient.length == msg.value, "Transfer: Amount error");
-        for(uint i = 0; i < recipient.length; i++) {
-            payable(recipient[i]).transfer(amount);
-        }
-    }
-
-    function transferEthWithDifferentValue(address[] memory recipient, uint256[] memory amount) external override payable onlyAdmin {
-        uint256 sum = 0;
-        for(uint i = 0; i < amount.length; i++) { 
-            sum += amount[i];
-        }
-        require(sum == msg.value, "Transfer: Amount error");
-        for(uint i = 0; i < recipient.length; i++) {
-            payable(recipient[i]).transfer(amount[i]);
-        }
     }
     
     function batch(address[] memory recipient, string[] memory token, uint256[] memory amount) external override onlyAdmin {
